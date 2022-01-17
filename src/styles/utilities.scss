@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.container {
+    width: 88%;
+    margin: auto;
+}
+
+// Text colors 
+.primary {
+    color: $font_primary_color;
+}
+.secondary {
+    color: $font_secondary_color;
+}
+.tertiary {
+    color: $font_tertiary_color;
+}
+
+// Big Titles 
+.title {
+    font-family: $font_title_family;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+// Small titles 
+.small-title {
+    font-family: $font_small_title_family;
+    color: $font_tertiary_color;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+// Descriptions 
+.desc {
+    font-family: $font_desc_family;
+    font-size: 17px;
+}
+
+// Buttons 
+.btn {
+    padding: 15px 30px;
+    border-radius: 5px;  
+    font-family: $font_desc_family;
+    font-size: 14px;
+}
+.btn.primary {
+    background-color: white;
+}
+.btn.secondary {
+    background-color: $brand_primary_color;
+}
