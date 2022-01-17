@@ -9,7 +9,7 @@
             <div class="nav-bar">
                 <ul>
                     <li v-for="n in 8" :key="n">
-                        <a href="#">home</a>
+                        <a class="active" href="#">home</a>
                     </li>
                     <li>
                         <a class="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
@@ -35,7 +35,7 @@
 
                     <!-- Desc  -->
                     <p class="desc tertiary">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quo sint? In tenetur vitae molestias, obcaecati dolorum ipsam, ratione aspernatur, velit veniam deleniti consequatur repudiandae laudantium porro laborum eaque sapiente!
+                        Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.
                     </p>
 
                     <!-- Button  -->
@@ -65,7 +65,7 @@ section {
 
     // Nav 
     nav {
-        padding: 10px 25px 0 30px;
+        padding: 10px 25px 0 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -87,13 +87,15 @@ section {
 
                     a {
                         font-family: $font_small_title_family;  
-                        text-transform: uppercase;   
+                        text-transform: uppercase; 
+                        line-height: 30px;
+                        
+                        &.active {
+                            border-bottom: 2px solid $brand_primary_color;
+                        }
                     }
 
                     // Shopping cart 
-                    // .cart {
-                        
-                    // }
                     
                 }
             }
@@ -114,7 +116,7 @@ section {
                 }
 
                 .title {
-                    font-size: 60px;
+                    font-size: 56px;
                     margin-bottom: 30px;
                 }
 
