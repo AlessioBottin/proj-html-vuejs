@@ -47,7 +47,17 @@
 }
 .btn.primary {
     background-color: white;
+
+    &:hover {
+        background-color: $brand_primary_color;
+        color: white;
+    }
 }
 .btn.secondary {
     background-color: $brand_primary_color;
+
+    &:hover {
+        background-color: #f0edf5;
+        color: $brand_primary_color;
+    }
 }

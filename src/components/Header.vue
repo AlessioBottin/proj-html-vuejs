@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <header>
         <!-- Nav  -->
         <nav>
             <div class="logo">
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 </template>
 
 <script>
@@ -56,7 +56,7 @@ export default {
 @import '../styles/utilities.scss';
 @import '../styles/variables.scss';
 
-section {
+header {
     background-image: url(../assets/img/hero-header-bakery.jpg);
     background-repeat: no-repeat;
     background-position-x: -270px;
