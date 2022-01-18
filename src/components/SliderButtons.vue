@@ -33,9 +33,9 @@ export default {
     left: 0;
 
     .slider-btn {
-        width: 50px;
-        height: 100px;
-        background-color: #a691b2;
+        width: 40px;
+        height: 80px;
+        background-color: #a691b2dc;
         display: flex;
         justify-content: center;
         align-items: center;
