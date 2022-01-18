@@ -362,8 +362,22 @@
                 </div>
 
                 <!-- Follow us -->
-                <div class="box box-wide"></div>
+                <div class="box box-wide">
 
+                    <!-- Title  -->
+                    <div class="small-title">
+                        made for sharing
+                    </div>
+
+                    <!-- Cta  -->
+                    <p class="title primary">Let's stay in touch</p>
+
+                    <!-- Button  -->
+                    <a class="btn secondary" href="#">
+                        <i class="fab fa-instagram"></i> Follow Us
+                    </a>
+                </div>
+                    
                 <div class="box">
                     <img :src="require('../assets/img/social-2.jpg')" alt="social photo">
                 </div>
@@ -387,6 +401,28 @@
             </section>
 
         </div>
+
+        <!-- Seasonal Products  -->
+        <section class="seasonal-products">
+            <div class="container-s">
+                <div class="flex-container">
+
+                    <!-- Title  -->
+                    <div class="small-title">
+                        try our seasonal products
+                    </div>
+
+                    <!-- Cta  -->
+                    <p class="cta title secondary">
+                        Order for pick-up or delivery to your home
+                    </p>
+
+                    <!-- Button  -->
+                    <a class="btn primary" chref="#">Shop Now</a>
+
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -415,14 +451,14 @@ export default {
 @import '../styles/variables.scss';
 
 main {
-    
-    .container {
 
-        // Spacing beetween sections 
-        section {
-            margin-top: $section_margin_top;
-        }
-        
+    // Spacing beetween sections 
+    section {
+        margin-top: $section_margin_top;
+    }
+
+    .container {
+      
         // Products 
         .products {
             display: flex;
@@ -739,6 +775,37 @@ main {
                 &-wide {
                     width: 49%;
                     background-color: #f3eef4;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        margin: 30px 0;
+                    }
+
+                    a:hover {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .seasonal-products {
+        width: 100%;
+        background-image: url(../assets/img/call-to-action-bg.jpg);
+        background-size: cover;
+        padding: 100px 0;
+
+        .container-s {
+
+            .flex-container {
+                
+                .cta {
+                    margin: 40px 0 70px 0;
+                    font-size: 48px;
+                    width: 60%;
                 }
             }
         }
