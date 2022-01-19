@@ -2,36 +2,36 @@
     <div class="container">
         <section class="products">
                 
-                <!-- Text  -->
-                <div class="text">
-                    
-                    <!-- Title  -->
-                    <div class="small-title">
-                        our products
-                    </div>
-
-                    <!-- Description  -->
-                    <p class="title primary">
-                        All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.
-                    </p>
-
-                    <!-- Button  -->
-                    <a class="btn secondary" href="#">Start Shopping</a>
-
+            <!-- Text  -->
+            <div class="text">
+                
+                <!-- Title  -->
+                <div class="small-title">
+                    our products
                 </div>
 
-                <!-- Product slider  -->
-                <div class="products-slider">
+                <!-- Description  -->
+                <p class="title primary">
+                    All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.
+                </p>
 
-                    <!-- Slider Buttons  -->
-                    <SliderButtons @setIndexes="updateIndexes"/>
+                <!-- Button  -->
+                <a class="btn secondary" href="#">Start Shopping</a>
 
-                    <!-- Product Card  -->
-                    <ProductCard :productObject="product" :type="'big'" v-for="(product, index) in productsToShow" :key="index"/>
+            </div>
 
-                </div>
+            <!-- Product slider  -->
+            <div class="products-slider">
 
-            </section>
+                <!-- Slider Buttons  -->
+                <SliderButtons @setIndexes="updateIndexes"/>
+
+                <!-- Product Card  -->
+                <ProductCard :productObject="product" :type="'big'" v-for="(product, index) in productsToShow" :key="index"/>
+
+            </div>
+
+        </section>
     </div>
 </template>
 

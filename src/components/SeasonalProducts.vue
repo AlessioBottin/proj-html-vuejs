@@ -32,21 +32,21 @@ export default {
 @import '../styles/variables.scss';
 
 .seasonal-products {
-        width: 100%;
-        background-image: url(../assets/img/call-to-action-bg.jpg);
-        background-size: cover;
-        padding: 100px 0;
+    width: 100%;
+    background-image: url(../assets/img/call-to-action-bg.jpg);
+    background-size: cover;
+    padding: 100px 0;
 
-        .container-s {
+    .container-s {
 
-            .flex-container {
-                
-                .cta {
-                    margin: 40px 0 70px 0;
-                    font-size: 48px;
-                    width: 60%;
-                }
+        .flex-container {
+            
+            .cta {
+                margin: 40px 0 70px 0;
+                font-size: 48px;
+                width: 60%;
             }
         }
+    }
 }
 </style>

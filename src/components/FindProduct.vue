@@ -2,34 +2,34 @@
     <div class="container">
         <section class="find-product">
 
-                <!-- Text  -->
-                <div class="text">
+            <!-- Text  -->
+            <div class="text">
                     
-                    <!-- Title  -->
-                    <p class="title primary">
-                        Find a freshly baked product perfect for you
-                    </p>
+                <!-- Title  -->
+                <p class="title primary">
+                    Find a freshly baked product perfect for you
+                </p>
 
-                    <!-- Description  -->
-                    <div class="desc tertiary">
-                        Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.
-                    </div>
-
-                    <!-- Button  -->
-                    <a class="btn secondary" href="#">Start Shopping</a>
-
+                <!-- Description  -->
+                <div class="desc tertiary">
+                    Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.
                 </div>
 
-                <!-- Product slider  -->
-                <div class="products-slider">
+                <!-- Button  -->
+                <a class="btn secondary" href="#">Start Shopping</a>
 
-                    <!-- Slider Buttons  -->
-                    <SliderButtons @setIndexes="updateIndexes"/>
+            </div>
 
-                    <!-- Product Card  -->
-                    <ProductCard :productObject="product" :type="'small'" v-for="(product, index) in productsToShow" :key="index"/>
+            <!-- Product slider  -->
+            <div class="products-slider">
 
-                </div>
+                <!-- Slider Buttons  -->
+                <SliderButtons @setIndexes="updateIndexes"/>
+
+                <!-- Product Card  -->
+                <ProductCard :productObject="product" :type="'small'" v-for="(product, index) in productsToShow" :key="index"/>
+
+            </div>
 
         </section>
     </div>
@@ -108,30 +108,30 @@ export default {
 @import '../styles/variables.scss';
 
 .find-product {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-            // Text 
-            .text {
-                width: 22%;
-                text-align: center;
+    // Text 
+    .text {
+        width: 22%;
+        text-align: center;
 
-                .desc {
-                    margin-bottom: 20px;
-                }
+        .desc {
+            margin-bottom: 20px;
+        }
 
-                .title {
-                    margin-bottom: 40px;
-                }
-            }
+        .title {
+            margin-bottom: 40px;
+        }
+    }
 
-            // Products Slider 
-            .products-slider {
-                width: 70%;
-                position: relative;
-                display: flex;
-                justify-content: space-between;   
-            }
+    // Products Slider 
+    .products-slider {
+        width: 70%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;   
+    }
 }
 </style>
