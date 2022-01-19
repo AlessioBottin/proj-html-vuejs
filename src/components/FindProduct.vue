@@ -24,7 +24,7 @@
                 <div class="products-slider">
 
                     <!-- Slider Buttons  -->
-                    <SliderButtons />
+                    <SliderButtons @setIndexes="updateIndexes"/>
 
                     <!-- Product Card  -->
                     <ProductCard :productObject="product" :type="'small'" v-for="(product, index) in productsToShow" :key="index"/>
@@ -51,6 +51,40 @@ export default {
     data: function() {
         return {
             activeIndexes: [0, 1, 2, 3]
+        }
+    },
+    methods: {
+        updateIndexes: function(toDo) {
+            toDo === 'increase' ? this.activeIndexes = this.increaseIndexes() : this.activeIndexes = this.decreaseIndexes();
+        },
+        increaseIndexes: function() {
+            const newIndexes = [];
+            const activeIndexes = this.activeIndexes;
+            this.activeIndexes = [];  
+
+            activeIndexes.forEach((activeIndex) => {
+                if (activeIndex < this.productsArray.length - 1) {
+                    newIndexes.push(activeIndex + 1); 
+                }else {
+                    newIndexes.push(0);
+                }        
+            });
+
+            return newIndexes
+        },
+        decreaseIndexes: function() {
+            const newIndexes = [];
+            const activeIndexes = this.activeIndexes;
+            this.activeIndexes = [];
+
+            activeIndexes.forEach((activeIndex) => {
+                if (activeIndex > 0) {
+                    newIndexes.push(activeIndex - 1); 
+                }else {
+                    newIndexes.push(this.productsArray.length - 1); 
+                }                
+            });
+            return newIndexes;
         }
     },
     computed: {

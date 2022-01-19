@@ -1,12 +1,12 @@
 <template>
     <div class="slider-buttons">
         <!-- Previous  -->
-        <div class="slider-btn">
+        <div @click="$emit('setIndexes', 'decrease')" class="slider-btn">
             <i class="fas fa-chevron-left"></i>
         </div>
 
         <!-- Next  -->
-        <div class="slider-btn">
+        <div @click="$emit('setIndexes', 'increase')" class="slider-btn">
             <i class="fas fa-chevron-right"></i>
         </div>
     </div>
