@@ -41,12 +41,12 @@
         <div class="product-info" v-if="type === 'small'">
 
             <!-- Name  -->
-            <div class="product-name primary">
+            <div class="product-name primary-color">
                 {{productObject.name}}
             </div>
 
             <!-- Price  -->
-            <div class="product-price primary">
+            <div class="product-price primary-color">
                 {{productObject.price}}
             </div>
 

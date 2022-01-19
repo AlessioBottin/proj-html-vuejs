@@ -29,17 +29,17 @@
                     </div>
 
                     <!-- Big Title  -->
-                    <div class="title primary">
+                    <div class="title primary-color">
                         The Perfect Fresh Bread
                     </div>
 
                     <!-- Desc  -->
-                    <p class="desc tertiary">
+                    <p class="desc tertiary-color">
                         Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.
                     </p>
 
                     <!-- Button  -->
-                    <a class="btn primary" href="#">Explore our products</a>
+                    <a class="btn primary-color" href="#">Explore our products</a>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ header {
                     margin-left: 40px;
                     margin-top: 10px;
                     font-size: 12px;
-                    color: $font_primary_color;
+                    color: $brand_primary_color;
 
                     a {
                         font-family: $font_small_title_family;  

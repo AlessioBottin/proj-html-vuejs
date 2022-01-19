@@ -15,10 +15,10 @@
                 </div>
 
                 <!-- Cta  -->
-                <p class="title primary">Let's stay in touch</p>
+                <p class="title primary-color">Let's stay in touch</p>
 
                 <!-- Button  -->
-                <a class="btn secondary" href="#">
+                <a class="btn secondary-color" href="#">
                     <i class="fab fa-instagram"></i> Follow Us
                 </a>
             </div>
@@ -80,7 +80,7 @@ export default {
             }
 
             a:hover {
-                background-color: white;
+                background-color: $brand_secondary_color;
             }
         }
     }

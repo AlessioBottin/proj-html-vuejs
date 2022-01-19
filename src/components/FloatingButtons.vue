@@ -35,7 +35,7 @@ export default {
         width: 65px;
         height: 65px;
         border-radius: 5px;
-        background-color: white;
+        background-color: $brand_secondary_color;
         color: black;
         display: flex;
         flex-direction: column;

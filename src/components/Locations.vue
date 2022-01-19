@@ -8,7 +8,7 @@
                     locations
                 </div>
 
-                <div class="title primary">
+                <div class="title primary-color">
                     Visit our Bakeries
                 </div>
             </div>
@@ -30,7 +30,7 @@
                 <div class="box info">
 
                     <!-- Location  -->
-                    <div class="title primary">New York</div>
+                    <div class="title primary-color">New York</div>
 
                     <!-- Info  -->
                     <div class="info-text">
@@ -48,7 +48,7 @@
                         </div>
 
                         <!-- Map  -->
-                        <a class="btn primary" href="#">View Map</a>
+                        <a class="btn primary-color" href="#">View Map</a>
 
                     </div>
 
@@ -58,7 +58,7 @@
                 <div class="box info">
 
                     <!-- Location -->
-                    <div class="title primary">London</div>
+                    <div class="title primary-color">London</div>
 
                     <!-- Info -->
                     <div class="info-text">
@@ -76,7 +76,7 @@
                         </div>
 
                         <!-- Map  -->
-                        <a class="btn primary" href="#">View Map</a>
+                        <a class="btn primary-color" href="#">View Map</a>
                     </div>
 
                 </div>

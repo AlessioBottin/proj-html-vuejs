@@ -11,12 +11,12 @@
                 </div>
 
                 <!-- Description  -->
-                <p class="title primary">
+                <p class="title primary-color">
                     All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.
                 </p>
 
                 <!-- Button  -->
-                <a class="btn secondary" href="#">Start Shopping</a>
+                <a class="btn secondary-color" href="#">Start Shopping</a>
 
             </div>
 

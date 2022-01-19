@@ -45,7 +45,7 @@ export default {
         &:hover {
             z-index: 3;
             background-color: $brand_primary_color;
-            color: white;
+            color: $brand_secondary_color;
         }
     }
 }

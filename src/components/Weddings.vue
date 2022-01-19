@@ -8,7 +8,7 @@
                     corporate & weddings
                 </div>
 
-                <div class="title primary">
+                <div class="title primary-color">
                     Baking Special Moments
                 </div>
             </div>
@@ -37,12 +37,12 @@
                             </div>
 
                             <!-- Description  -->
-                            <div class="title secondary">
+                            <div class="title secondary-color">
                                 Corporate Events
                             </div>
 
                             <!-- Button  -->
-                            <a class="btn secondary" href="#">Explore More</a> 
+                            <a class="btn secondary-color" href="#">Explore More</a> 
                         </div>                            
                     </div>
 
@@ -69,12 +69,12 @@
                             </div>
 
                             <!-- Description  -->
-                            <div class="title secondary">
+                            <div class="title secondary-color">
                                 Weddings & Parties
                             </div>
 
                             <!-- Button  -->
-                            <a class="btn secondary" href="#">Explore More</a>                           
+                            <a class="btn secondary-color" href="#">Explore More</a>                           
                         </div>
                         
                     </div>
@@ -140,7 +140,7 @@ export default {
                     
                     .small-title {
                         margin-bottom: 25px;
-                        color: white;
+                        color: $brand_secondary_color;
                     }
 
                     .title {

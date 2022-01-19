@@ -6,17 +6,17 @@
             <div class="text">
                     
                 <!-- Title  -->
-                <p class="title primary">
+                <p class="title primary-color">
                     Find a freshly baked product perfect for you
                 </p>
 
                 <!-- Description  -->
-                <div class="desc tertiary">
+                <div class="desc tertiary-color">
                     Integer a nibh vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.
                 </div>
 
                 <!-- Button  -->
-                <a class="btn secondary" href="#">Start Shopping</a>
+                <a class="btn secondary-color" href="#">Start Shopping</a>
 
             </div>
 
@@ -69,7 +69,6 @@ export default {
                     newIndexes.push(0);
                 }        
             });
-
             return newIndexes
         },
         decreaseIndexes: function() {

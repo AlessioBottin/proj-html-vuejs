@@ -8,7 +8,7 @@
 
                         <!-- Left Column  -->
                         <div class="col-l">
-                            <div class="title secondary">
+                            <div class="title secondary-color">
                                 Tell us what you have in mind
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                         <div class="col-l">
 
                             <!-- Title  -->
-                            <div class="title secondary">
+                            <div class="title secondary-color">
                                 We start baking
                             </div>
 
@@ -69,12 +69,12 @@
                         </div>
 
                         <!-- Text  -->
-                        <div class="title primary">
+                        <div class="title primary-color">
                             “Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.”
                         </div>
 
                         <!-- By  -->
-                        <div class="desc tertiary">
+                        <div class="desc tertiary-color">
                             Rachel Cooper, Founder
                         </div>
 
@@ -89,7 +89,7 @@
                         <div class="col-l">
 
                             <!-- Title  -->
-                            <div class="title secondary">
+                            <div class="title secondary-color">
                                 Delivered to your home
                             </div>
 
@@ -127,7 +127,7 @@ export default {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            color: white;
+            color: $brand_secondary_color;
 
             // Banners
             .banner {

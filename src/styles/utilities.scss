@@ -11,14 +11,14 @@
 }
 
 // Text colors 
-.primary {
-    color: $font_primary_color;
+.primary-color {
+    color: $brand_primary_color;
 }
-.secondary {
-    color: $font_secondary_color;
+.secondary-color {
+    color: $brand_secondary_color;
 }
-.tertiary {
-    color: $font_tertiary_color;
+.tertiary-color {
+    color: $brand_tertiary_color;
 }
 
 // Big Titles 
@@ -31,7 +31,7 @@
 // Small titles 
 .small-title {
     font-family: $font_small_title_family;
-    color: $font_tertiary_color;
+    color: $brand_tertiary_color;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -50,15 +50,15 @@
     font-family: $font_desc_family;
     font-size: 14px;
 }
-.btn.primary {
-    background-color: white;
+.btn.primary-color {
+    background-color: $brand_secondary_color;
 
     &:hover {
         background-color: $brand_primary_color;
-        color: white;
+        color: $brand_secondary_color;
     }
 }
-.btn.secondary {
+.btn.secondary-color {
     background-color: $brand_primary_color;
 
     &:hover {

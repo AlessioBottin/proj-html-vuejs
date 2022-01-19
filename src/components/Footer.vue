@@ -12,7 +12,7 @@
 
                 <!-- Nav-bar  -->
                 <nav>
-                    <ul class="link-list desc primary">
+                    <ul class="link-list desc primary-color">
 
                         <li v-if="link.text2" v-for="(link, index) in menuLinksArray" :key="index">
                             <a href="#">{{link.text2}}</a>
@@ -39,17 +39,17 @@
             <div class="newsletter">
 
                 <!-- Cta  -->
-                <p class="cta title primary">Subscribe to our Newsletter</p>
+                <p class="cta title primary-color">Subscribe to our Newsletter</p>
 
                 <!-- Email  -->
                 <div class="email">
                     <input type="text" placeholder="Enter an email address*">
-                    <a class="btn secondary" href="#">Subscribe</a>
+                    <a class="btn secondary-color" href="#">Subscribe</a>
                 </div>
 
                 <!-- Socials  -->
                 <div class="social">
-                    <ul class="social-list primary">
+                    <ul class="social-list primary-color">
                         <li><i class="fab fa-instagram"></i></li>
                         <li><i class="fab fa-twitter"></i></li>
                         <li><i class="fab fa-facebook-f"></i></li>

@@ -9,12 +9,12 @@
                     </div>
 
                     <!-- Cta  -->
-                    <p class="cta title secondary">
+                    <p class="cta title secondary-color">
                         Order for pick-up or delivery to your home
                     </p>
 
                     <!-- Button  -->
-                    <a class="btn primary" chref="#">Shop Now</a>
+                    <a class="btn primary-color" chref="#">Shop Now</a>
 
                 </div>
             </div>
