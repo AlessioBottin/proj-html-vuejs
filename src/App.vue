@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :menuLinksArray="menuLinks"/>
     
     <FloatingButtons />
 
     <Main />
 
-    <Footer />
+    <Footer :menuLinksArray="menuLinks"/>
   </div>
 </template>
 
@@ -27,6 +27,51 @@ export default {
     Footer,
     FloatingButtons
   },
+  data: function () {
+    return {
+      menuLinks: [
+        {
+          text: 'Home',
+          ref: '#'
+        },
+        {
+          text: 'Shop',
+          text2: 'Shop',
+          ref: '#'
+        },
+        {
+          text: 'About',
+          text2: 'About',
+          ref: '#'
+        },
+        {
+          text: 'Gallery',
+          text2: 'Gallery',
+          ref: '#'
+        },
+        {
+          text: 'Locations',
+          text2: 'Locations',
+          ref: '#'
+        },
+        {
+          text: 'Journal',
+          text2: 'Journal',
+          ref: '#'
+        },
+        { 
+          text: 'Contact',
+          text2: 'Contact',          
+          ref: '#'
+        },
+        {
+          text: 'My Account',
+          text2: 'Orders',
+          ref: '#'
+        }
+      ]
+    }
+  }
 };
 </script>
 

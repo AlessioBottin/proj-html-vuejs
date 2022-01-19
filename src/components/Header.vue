@@ -8,8 +8,8 @@
 
             <div class="nav-bar">
                 <ul>
-                    <li v-for="n in 8" :key="n">
-                        <a class="active" href="#">home</a>
+                    <li v-for="(link, index) in menuLinksArray" :key="index">
+                        <a :class="{ active : isActive(index)}" href="#">{{link.text}}</a>
                     </li>
                     <li>
                         <a class="cart" href="#"><i class="fas fa-shopping-cart"></i></a>
@@ -49,6 +49,19 @@
 <script>
 export default {
     name: 'Header',
+    props: {
+        menuLinksArray: Array
+    },
+    data: function() {
+        return {
+            activeIndex: 0
+        }
+    },
+    methods: {
+        isActive(index) {
+            return index === this.activeIndex ? true : false
+        },
+    }
 }
 </script>
 
@@ -89,6 +102,7 @@ header {
                         font-family: $font_small_title_family;  
                         text-transform: uppercase; 
                         line-height: 30px;
+                        font-weight: bold;
                         
                         &.active {
                             border-bottom: 2px solid $brand_primary_color;

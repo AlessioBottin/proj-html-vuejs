@@ -14,8 +14,8 @@
                 <nav>
                     <ul class="link-list desc primary">
 
-                        <li v-for="n in 7" :key="n">
-                            <a class="active" href="#">home</a>
+                        <li v-if="link.text2" v-for="(link, index) in menuLinksArray" :key="index">
+                            <a href="#">{{link.text2}}</a>
                         </li>
                         <li>
                             <a class="cart" href="#">
@@ -65,6 +65,9 @@
 <script>
 export default {
     name: 'Footer',
+    props: {
+        menuLinksArray: Array
+    }
 }
 </script>
 
