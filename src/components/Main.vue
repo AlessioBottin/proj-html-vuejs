@@ -3,7 +3,7 @@
 
         <!-- Our Products  -->
         <section>
-            <Products />
+            <Products :productsArray="products"/>
         </section>
 
         <!-- Corporate and weddings -->
@@ -13,7 +13,7 @@
 
         <!-- Find a product  -->
         <section>
-            <FindProduct />
+            <FindProduct :productsArray="products"/>
         </section>
 
         <!-- Product creation process  -->
@@ -62,7 +62,34 @@ export default {
     data: function() {
         return {
             products: [
-                
+                {
+                    name: 'Choco Chip Cookies',
+                    path: 'choco-chip-cookies.jpg',
+                    genre: 'Pastries',
+                    type: 'Cookies',
+                    price: '$19.00 - $39.00'
+                },
+                {
+                    name: 'Strawberry Jam Cookies',
+                    path: 'strawberry-jam-cookies.jpg',
+                    genre: 'Pastries',
+                    type: 'Cookies',
+                    price: '$24.00 - $62.00'
+                },
+                {
+                    name: 'Strawberry Donut',
+                    path: 'strawberry-donut.jpg',
+                    genre: 'Pastries',
+                    type: 'Donuts',
+                    price: '$24.00 - $62.00'
+                },
+                {
+                    name: 'Perfect Macarons',
+                    path: 'perfect-macarons.jpg',
+                    genre: 'Pastries',
+                    type: 'Macarons',
+                    price: '$18.00 - $52.00'
+                }
             ],
         }
     }

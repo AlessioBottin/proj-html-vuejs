@@ -27,7 +27,7 @@
                     <SliderButtons />
 
                     <!-- Product Card  -->
-                    <ProductCard :productsArray="products" :type="'small'" v-for="n in 4" :key="n + 'mini-slider'"/>
+                    <ProductCard :productObject="product" :type="'small'" v-for="(product, index) in productsToShow" :key="index"/>
 
                 </div>
 
@@ -44,6 +44,27 @@ export default {
     components: {
         SliderButtons,
         ProductCard
+    },
+    props: {
+        productsArray: Array
+    },
+    data: function() {
+        return {
+            activeIndexes: [0, 1, 2, 3]
+        }
+    },
+    computed: {
+        productsToShow() {
+            const products = [];
+
+            this.productsArray.forEach((product, index) => {
+                if(this.activeIndexes.includes(index)) {
+                    products.push(product);
+                }
+            });
+
+            return products;
+        }
     }
 }
 </script>

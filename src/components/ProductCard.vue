@@ -3,7 +3,7 @@
 
         <!-- Product image  -->
         <div class="product-img">
-            <img :src="require('../assets/img/choco-chip-cookies-500x638.jpg')" alt="cookies">
+            <img :src="require(`../assets/img/products/${productObject.path}`)" :alt="productObject.name">
 
             <!-- Product Hover -->
             <div class="product-hover">
@@ -13,17 +13,17 @@
 
                     <!-- Product Name  -->
                     <div class="title product-name">
-                        Choco Chips Cookies
+                        {{productObject.name}}
                     </div>
 
                     <!-- Product genre  -->
                     <div class="desc product-genre">
-                        Cookies, Pastries
+                        {{productObject.type}}, {{productObject.genre}}
                     </div>
 
                     <!-- Product Price  -->
                     <div class="desc product-price">
-                        $19.00 $39.00
+                        {{productObject.price}}
                     </div>
 
                 </div>
@@ -37,17 +37,17 @@
         </div>
 
 
-        <!-- Product info for small slider  -->
+        <!-- Product Info for small slider  -->
         <div class="product-info" v-if="type === 'small'">
 
             <!-- Name  -->
             <div class="product-name primary">
-                Choco Chip Cookies
+                {{productObject.name}}
             </div>
 
             <!-- Price  -->
             <div class="product-price primary">
-                $19.00 - $39.00
+                {{productObject.price}}
             </div>
 
         </div>
@@ -60,7 +60,7 @@ export default {
     name: 'ProductCard',
     props: {
         type: String,
-        productsArray: Array
+        productObject: Object
     },
     computed: {
         cardSize() {
